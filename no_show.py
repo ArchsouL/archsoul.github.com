@@ -32,7 +32,7 @@ if __name__ == '__main__':
 #   if len(sys.argv) <3:
 #       print('> Usage cmd [xpos] [ypox]')
 #       exit(0)
-  pos = []
+  pos = [14145935.7584412,4515381.5910723]
   query_xy=query.replace('XPOS', pos[0]).replace('YPOS', pos[1]).encode('UTF-8')
   resp = requests.post(url, headers=header,data=query_xy)
 
